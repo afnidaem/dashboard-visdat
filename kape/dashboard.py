@@ -274,7 +274,7 @@ def main():
     st.title(":bar_chart: Dashboard Aktivasi Akun Belajar.id Provinsi Lampung")
 
     uploaded_excel = st.file_uploader("📄 Upload File Excel (.xlsx)", type=["xlsx"])
-    geojson_path = "../data/lpg.geojson"
+    geojson_path = "data/lpg.geojson"
 
     if uploaded_excel:
         df, gdf = load_data(uploaded_excel, geojson_path)
